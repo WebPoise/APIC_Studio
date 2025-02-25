@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portraits</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        /* Gallery section */
+        .gallery {
+            padding: 2rem;
+        }
+
+        .gallery h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Image grid */
+        .gallery__container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 images per row (desktop) */
+            gap: 10px;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+
+        .gallery__container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery__container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive for tablets & mobile */
+        @media (max-width: 768px) {
+            .gallery__container {
+                grid-template-columns: repeat(2, 1fr); /* 2 images per row (mobile) */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery__container {
+                grid-template-columns: repeat(1, 1fr); /* 1 image per row (small screens) */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="gallery">
+        <h2>Portraits Gallery</h2>
+        <div class="gallery__container">
+            <img src="assets/Portraits/p1.jpeg" alt="Image 1">
+            <img src="assets/Portraits/p9.jpeg" alt="Image 2">
+            <img src="assets/Portraits/p2.jpeg" alt="Image 3">
+            <img src="assets/Portraits/p11.jpeg" alt="Image 4">
+            <img src="assets/Portraits/p3.jpeg" alt="Image 5">
+            <img src="assets/Portraits/p15.jpeg" alt="Image 9">
+            <img src="assets/Portraits/p13.jpeg" alt="Image 6">
+            <img src="assets/Portraits/p6.jpeg" alt="Image 7">
+            <img src="assets/Portraits/p16.jpeg" alt="Image 8">
+
+
+            <img src="assets/Portraits/p4.jpeg" alt="Image 9">
+            <img src="assets/Portraits/p7.jpeg" alt="Image 9">
+            <img src="assets/Portraits/p5.jpeg" alt="Image 9">
+            <img src="assets/Portraits/p8.jpeg" alt="Image 9">
+            <img src="assets/Portraits/p10.jpeg" alt="Image 9">
+            <img src="assets/Portraits/p17.jpeg" alt="Image 9">
+        </div>
+    </section>
+
+</body>
+</html>
